@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.json
+*.html
+.DS_Store
+!demo_dashboard.png
