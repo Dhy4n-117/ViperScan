@@ -37,17 +37,6 @@ Advanced Scan: Scans ports 1-500 with 50 threads and saves an HTML report.
 python main.py -t 192.168.1.105 -p 1-500 --threads 50 -o scan_results.html
 ```
 
-## 📂 Project Structure
-```text
-ViperScan/
-├── core/
-│   ├── scanner.py      # Multi-threaded scanning logic
-│   └── grabber.py      # Socket-based banner grabbing
-├── utils/
-│   ├── reporter.py     # HTML/JSON report generator
-│   └── colors.py       # Terminal UI styling
-└── main.py             # CLI Entry point
-```
 ## ⚠️ Disclaimer
  This tool is for educational purposes and authorized security testing only. Scanning networks without permission is illegal.
  
