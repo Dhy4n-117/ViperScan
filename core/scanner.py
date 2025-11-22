@@ -46,8 +46,6 @@ def start_scan(target_ip, ports, threads):
         for result in results:
             if result:
                 port, banner, os_guess = result
-
-                # Professional formatted output
                 print(
                     f"    {Color.GREEN}[+] Port {port:<5} OPEN {Color.RESET}| {banner[:40]:<40} | {Color.YELLOW}{os_guess}")
 
