@@ -32,7 +32,6 @@ def save_json_report(target, open_ports, filename):
         print(f"[!] Error saving report: {e}")
 
 
-# Keep your existing save_json_report function here...
 def save_html_report(target, open_ports, filename):
     html_template = f"""
     <!DOCTYPE html>
@@ -72,7 +71,6 @@ def save_html_report(target, open_ports, filename):
     # Add rows dynamically
     rows = ""
     for port_info in open_ports:
-        # port_info is now (port, banner, os_guess)
         port, banner, os_guess = port_info
         rows += f"""
         <tr>
