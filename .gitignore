@@ -4,3 +4,4 @@ __pycache__/
 *.html
 .DS_Store
 !demo_dashboard.png
+*.db
