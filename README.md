@@ -11,6 +11,7 @@
 * **Intelligent Reporting:** Generates a dark-mode **HTML Dashboard** for easy analysis.
 * **Colorized CLI:** Clear, color-coded terminal output for real-time feedback.
 * **OS Heuristics:** Analyzes banners to estimate the target Operating System.
+* **Change Detection Engine:** Uses SQLite to track scan history and alerts on new/changed ports (Stateful Analysis).
 
 ## 🛠️ Installation
 
