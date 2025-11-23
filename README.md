@@ -12,6 +12,7 @@
 * **Colorized CLI:** Clear, color-coded terminal output for real-time feedback.
 * **OS Heuristics:** Analyzes banners to estimate the target Operating System.
 * **Change Detection Engine:** Uses SQLite to track scan history and alerts on new/changed ports (Stateful Analysis).
+* **Venom Module:** automated vulnerability assessment for common protocols (HTTP Headers, Anonymous FTP).
 
 ## 🛠️ Installation
 
